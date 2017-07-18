@@ -15,7 +15,8 @@ using namespace std;
 int main(int argc, const char * argv[]) {
     cout << "Please choose your race or choose quit." << endl;
     string pc_type;
-    Player * me; // Pointer to Player.hhh
+
+    Player * me; // Pointer to Player. this is a unique ptr
     cin >> pc_type;
     if (pc_type == "q") {
         return 0;
